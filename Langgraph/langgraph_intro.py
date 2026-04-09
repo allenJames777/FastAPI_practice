@@ -1,5 +1,6 @@
 import os
-os.environ["GROQ_API_KEY"] = "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"
+from dotenv import load_dotenv
+load_dotenv()
 
 from langchain_groq import ChatGroq
 from langgraph.graph import StateGraph, START, END
